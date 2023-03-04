@@ -19,8 +19,6 @@ jobs:
       packages: write
     uses: AdamKorcz/java-slsa-generator/.github/workflows/gradle-trw.yml@main
     with:
-      name1: value1
-      name2: value2
       rekor-log-public: true
       artifact-list: |
         ./sigstore-java/build/local-maven-repo/dev/sigstore/sigstore-java/GRADLE_VERSION/sigstore-java-GRADLE_VERSION.module,
