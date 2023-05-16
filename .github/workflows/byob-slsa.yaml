@@ -17,7 +17,7 @@ jobs:
       id-token: write
       actions: read
       packages: write
-    uses: AdamKorcz/java-slsa-generator/.github/workflows/gradle-trw.yml@main
+    uses: AdamKorcz/slsa-github-generator/.github/workflows/gradle-trw.yml@main
     with:
       rekor-log-public: true
       artifact-list: |
