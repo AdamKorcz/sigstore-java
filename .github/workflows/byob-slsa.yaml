@@ -7,16 +7,16 @@ on:
 
 permissions: read-all
 
-env:
-  GH_TOKEN: ${{ github.token }}
-  ISSUE_REPOSITORY: ${{ github.repository }}
+#env:
+#  GH_TOKEN: ${{ github.token }}
+#  ISSUE_REPOSITORY: ${{ github.repository }}
 jobs:
   usetrw:
     permissions:
       contents: write
       id-token: write
       actions: read
-      packages: write
+      #packages: write
     uses: AdamKorcz/slsa-github-generator/.github/workflows/builder_gradle_slsa3.yml@gradle-july-update
     with:
       rekor-log-public: true
